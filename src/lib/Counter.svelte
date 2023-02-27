@@ -1,13 +1,18 @@
 <script>
-	let count = 0;
+	import { count } from '../stores.js';
+	let countValue;
+
+	count.subscribe(value => {
+		countValue = value;
+	});
 	function incrementCount(){
-		count += 1;
+		count.update(n => n + 1);
 	}
 </script>
 
 <div class="counter">
 	<button on:click={incrementCount} class="counter-btn">
-		Count: {count}
+		Count: {countValue}
 	</button>
 </div>
 
