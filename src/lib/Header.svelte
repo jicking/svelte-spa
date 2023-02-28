@@ -14,6 +14,9 @@
 			<li>
 				<a href="/about">About</a>
 			</li>
+			<li>
+				<a href="/getdata">GetData</a>
+			</li>
 		</ul>
 	</nav>
 </header>
